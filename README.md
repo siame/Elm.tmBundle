@@ -14,3 +14,4 @@ variable. You can find this in Preferences <kbd>⌘</kbd><kbd>,</kbd> -> Variabl
 ## Features
 * Syntax highlighting
 * Automatic formatting on save using `elm-format`
+* Compile using `elm-make`

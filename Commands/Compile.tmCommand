@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+
+while [ $PWD != $TM_PROJECT_DIRECTORY ]
+do 
+    cd ..    
+    if [ -e $PWD/elm-package.json ]; then
+        break
+    fi
+done
+
+find . -name "Main.elm" -not -path "./elm-stuff/*" -not -path "./tests/*" | while read f; do
+    elm-make --output="/dev/null" $f
+done
+</string>
+	<key>input</key>
+	<string>document</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>@C</string>
+	<key>name</key>
+	<string>Compile</string>
+	<key>outputCaret</key>
+	<string>interpolateByLine</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
+	<key>scope</key>
+	<string>source.elm</string>
+	<key>uuid</key>
+	<string>27346929-63D4-447F-9E06-92946D5AECCF</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
