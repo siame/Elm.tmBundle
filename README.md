@@ -4,10 +4,13 @@ Textmate 2 Bundle for the Elm language.
 ## Installation
 
 ```
-cd ~/Library/Application Support/Avian/Pristine Copy/Bundles/
-git clone https://github.com/fab1an/Elm.tmBundle.git
+cd ~/Library/Application Support/TextMate/Bundles
+git clone https://github.com/siame/Elm.tmBundle.git
 ```
 
-## Features  
-* Syntax-Highlighting
-* automatic formatting on Save using `elm-format`
+This bundle requires you to have `node` and `elm` available in your $PATH TextMate
+variable. You can find this in Preferences <kbd>⌘</kbd><kbd>,</kbd> -> Variables
+
+## Features
+* Syntax highlighting
+* Automatic formatting on save using `elm-format`
