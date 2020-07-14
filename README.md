@@ -3,8 +3,8 @@ Textmate 2 Bundle for the Elm language.
 
 ## Installation
 
-```
-cd ~/Library/Application Support/TextMate/Bundles
+```sh
+cd ~/Library/Application\ Support/TextMate/Bundles
 git clone https://github.com/siame/Elm.tmBundle.git
 ```
 
